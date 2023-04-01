@@ -15,6 +15,9 @@ import BookUpdate from "@/components/book/BookUpdate.vue";
 import ReaderForm from "@/components/reader/ReaderForm.vue";
 import ReaderTable from "@/components/reader/ReaderTable.vue";
 import ReaderUpdate from "@/components/reader/ReaderUpdate.vue";
+import RentalForm from "@/components/rental/RentalForm.vue";
+import RentalTable from "@/components/rental/RentalTable.vue";
+import RentalUpdate from "@/components/rental/RentalUpdate.vue";
 import Main from "@/components/Main.vue";
 
 const router = createRouter({
@@ -42,6 +45,10 @@ const router = createRouter({
             component: ReaderForm,
         },
         {
+            path: '/rental-form',
+            component: RentalForm,
+        },
+        {
             path: '/authors',
             name: 'authors',
             component: AuthorTable,
@@ -50,6 +57,11 @@ const router = createRouter({
             path: '/readers',
             name: 'readers',
             component: ReaderTable,
+        },
+        {
+            path: '/rentals',
+            name: 'rentals',
+            component: RentalTable,
         },
         {
             path: '/author-update/:id',
@@ -65,6 +77,11 @@ const router = createRouter({
             path: '/reader-update/:id',
             name: 'readerUpdate',
             component: ReaderUpdate,
+        },
+        {
+            path: '/rental-update/:id',
+            name: 'rentalUpdate',
+            component: RentalUpdate,
         },
     ]
 })

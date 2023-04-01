@@ -11,6 +11,7 @@
         <li class="nav-item active"><a class="nav-link" href="/books">Książki</a></li>
         <li class="nav-item active"><a class="nav-link" href="/authors">Autorzy</a></li>
         <li class="nav-item active"><a class="nav-link" href="/readers">Czytelnicy</a></li>
+        <li class="nav-item active"><a class="nav-link" href="/rentals">Wypożyczenia</a></li>
       </ul>
     </div>
   </nav>
