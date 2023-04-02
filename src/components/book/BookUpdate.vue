@@ -21,7 +21,7 @@
       <label>Autor</label>
       <select v-model="book.author.lastName">
         <option
-            v-for="a in authors" :key="a.id"
+            v-for="a in authors" :key="a.id" :value="a.lastName"
         >
           {{ a.lastName }}
         </option>
@@ -168,6 +168,6 @@ h4 {
   }
   select {
     width: 310px;
-    height: 30px;
+    height: 50px;
   }
 </style>

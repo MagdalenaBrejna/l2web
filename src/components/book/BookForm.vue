@@ -1,5 +1,5 @@
 <template>
-  <div id="person-form" class="container mt-5">
+  <div id="book-form" class="container mt-5">
     <br>
     <h4>Dodaj nową książkę</h4>
     <form @submit.prevent="handleSubmit">
@@ -21,7 +21,7 @@
       <label>Autor</label>
       <select v-model="book.author">
         <option
-            v-for="a in authors" :key="a.id"
+            v-for="a in authors" :key="a.id" 
             @focus="clearStatus"
         >
           {{a.lastName}}
@@ -165,6 +165,6 @@ body {
   }
   select {
     width: 310px;
-    height: 30px;
+    height: 50px;
   }
 </style>
