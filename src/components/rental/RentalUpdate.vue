@@ -152,6 +152,7 @@ export default {
         this.$router.push({ name: 'rentals'});
         console.log(response.data)
       } catch (error) {
+          
         console.error(error)
       }
     },

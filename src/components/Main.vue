@@ -87,13 +87,13 @@
 </template>
 
 <script>
-  import BookForm from "@/components/book/BookForm.vue";
+  import BookTable from "@/components/book/BookTable.vue";
   import AuthorTable from "@/components/author/AuthorTable.vue";
   import CustomNavbar from "@/components/utils/CustomNavbar.vue";
 
   export default {
     name: "Main",
-    components: {CustomNavbar, AuthorTable, BookForm}
+    components: {CustomNavbar, AuthorTable, BookTable}
 }
 </script>
 

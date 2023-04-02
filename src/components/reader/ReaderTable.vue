@@ -81,6 +81,7 @@ export default {
           })
           .catch(error => {
             // Obsługa błędów
+            this.$router.push({ name: 'ErrorPageR', params: { id: error } });
             console.error(error);
           });
       this.readers = this.readers.filter(obj => {

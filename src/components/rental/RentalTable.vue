@@ -88,6 +88,7 @@ export default {
           })
           .catch(error => {
             // Obsługa błędów
+            this.$router.push({ name: 'ErrorPageRU', params: { id: error } });
             console.error(error);
           });
       this.rentals = this.rentals.filter(obj => {

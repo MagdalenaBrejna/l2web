@@ -18,6 +18,11 @@ import ReaderUpdate from "@/components/reader/ReaderUpdate.vue";
 import RentalForm from "@/components/rental/RentalForm.vue";
 import RentalTable from "@/components/rental/RentalTable.vue";
 import RentalUpdate from "@/components/rental/RentalUpdate.vue";
+import ErrorPage from "@/components/error/ErrorPage.vue";
+import ErrorPageA from "@/components/error/ErrorPageA.vue";
+import ErrorPageR from "@/components/error/ErrorPageR.vue";
+import ErrorPageRW from "@/components/error/ErrorPageRW.vue";
+import ErrorPageRU from "@/components/error/ErrorPageRU.vue";
 import Main from "@/components/Main.vue";
 
 const router = createRouter({
@@ -26,6 +31,32 @@ const router = createRouter({
         {
             path: '/',
             component: Main,
+        },
+
+        {
+            path: '/error-page/:id',
+            name: 'ErrorPage',
+            component: ErrorPage,
+        },
+        {
+            path: '/error-page-a/:id',
+            name: 'ErrorPageA',
+            component: ErrorPageA,
+        },
+        {
+            path: '/error-page-r/:id',
+            name: 'ErrorPageR',
+            component: ErrorPageR,
+        },
+        {
+            path: '/error-page-rw/:id',
+            name: 'ErrorPageRW',
+            component: ErrorPageRW,
+        },
+        {
+            path: '/error-page-ru/:id',
+            name: 'ErrorPageRU',
+            component: ErrorPageRU,
         },
         {
             path: '/books',

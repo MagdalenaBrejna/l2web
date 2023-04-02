@@ -72,13 +72,14 @@ export default {
       }
     },
     async deleteAuthor(itemId) {
-      axios.delete(`http://localhost:8080/delete/author/${itemId}`)
+      axios.delete(`http://localhost:8080/authors/${itemId}`)
           .then(response => {
             // Obsługa odpowiedzi serwera
             console.log(response.data);
           })
           .catch(error => {
             // Obsługa błędów
+            this.$router.push({ name: 'ErrorPageA', params: { id: error } });
             console.error(error);
           });
       this.authors = this.authors.filter(obj => {

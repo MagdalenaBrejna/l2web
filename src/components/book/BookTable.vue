@@ -84,6 +84,7 @@ export default {
           })
           .catch(error => {
             // Obsługa błędów
+            this.$router.push({ name: 'ErrorPage', params: { id: error } });
             console.error(error);
           });
       this.books = this.books.filter(obj => {

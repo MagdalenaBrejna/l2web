@@ -145,6 +145,7 @@ export default {
         const rentals = await savedRentals.json()
         this.rentalsSource.push(rentals[rentals.length - 1])
       } catch (error) {
+        this.$router.push({ name: 'ErrorPageRW', params: { id: error } });  
         console.error(error)
       }
     },
